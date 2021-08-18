@@ -1,0 +1,238 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School website-1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=""></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar-inverse my_nav_bar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my_navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">ITI Central School</a>
+        </div>
+        <div class="collapse navbar-collapse" id="my_navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#CampusLife">Campus Life</a></li>
+                <li><a href="#achievments">Achievements</a></li>
+                <li><a href="#whats_new">What's New</a></li>
+                <li><a href="#alumni">Alumni</a></li>
+                <li><a href="#ContactUs">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="announcement">
+            <marquee id="marqueestyle" onmouseover="this.stop();" onmouseout="this.start();">
+                *** Feel free to ask queries on iticbse_bgp@itiltd.co.in ***
+            </marquee>
+        </div>
+        <iframe id="video" src="https://www.youtube.com/embed/n6qp13EIhv0"></iframe>
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="CampusLife">
+            <h2 class="text-capitalize">Campus life</h2>
+        </div>
+        <div class="row">
+            <div class="campus_life_mainDiv col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="img-responsive" src="data:image/jpeg;base64,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">
+                <h4 class="text-capitalize"><kbd>ITI CENTRAL SCHOOL</kbd></h4>
+                <hr>
+                <p class="text-muted">ITI Central School is a Central Board of Secondary Education school located in Dooravani Nagar, Bangalore, India. The pre-primary and early years learning programme at ITI1 is a system where the tenets of Montessori education are scientifically combined with tried and tested teaching methods, focussing on language development and logical thinking, for children to start their first steps into the education system.</p>
+            </div>
+            <div class="campus_life_mainDiv col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/pk1hCu0ByMdp2J1e8ZKJBw65aDC_xsARXDQR69xXX5BF5a_RugCLXUiafuSU6kEeX8-BTF70F2PfL4SYmh1rHK5JoGJ7217itccsodSrpeHda7_SjRZu-WRi2vd87o3jUjFL-Jg6wdOxMc9Ahk8dFXUNoVSvnDu5BWTsGzSOlAh2UIYJxQUTWWrLodUsW9YHjd12_VjnxPhL2QIwhZp5TTtDWRTQtiZQJjiU6CrZvYGhkqnymOeV7_lkvvouVSXoOMLKQ7grhqL3nJCk_TfWu-64VcRwe8POkUIQQx4gePx97HSPXGQ-0XX9bHg4yawtSLsbXN6wY95t2hxF94SJe8tg9ln2G5w8JPT66kEu0rmhx3iZWtltPC__GXFQ39E9StWmGeP48YWPXIpHEy8iVw03BZtgrNJ3fhK-2NrpmCBI3LuQ8y1dTnHaxWVu2b_DpVq_Ou0Lb5xWqeWGihxKEmCeog8igi5vpSIpXElnywK8b9URm2JrT4hZxIV6hlHxLlwGRm69EFHlLEgYsqDG-xXhRaZGS8d2N-_Qq3__w9Zsh4wtQW9Q-JU0SvaYugfZZ2jb_MjXEPn9NmbhQ6tdogu6CMaf0wj5QWk0EFdQg6xlu4LfMjVxQ_PDTs3YzhFYI6BpKgwHOyVQnmVlZywSUDIootJsHuA1EACp70ov5_wzG-C3804YvA=w999-h588-no">
+                <h4 class="text-capitalize"><kbd>ART CLASSROOM</kbd></h4>
+                <hr>
+                <p class="text-muted">To kindle a conducive learning environment on par with the best institutions worldwide, Chennai Public School has spared no effort or investment to ensure that the best infrastructure is made available to students to enable them to pursue their education with ease and comfort.</p>
+            </div>
+            <div class="campus_life_mainDiv col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="img-responsive" src="https://www.chennaipublicschool.com/thirumazhisai/images/home_page_image3.jpg">
+                <h4 class="text-capitalize"><kbd>Smart Class – Interactive Digital classroom:</kbd></h4>
+                <hr>
+                <p class="text-muted">ITI Central School was one of the first schools in India to have smart boards in all the classrooms and also a 5.1 theatre system in all classrooms.</p>
+            </div>
+        </div>
+        <div class="page-header" id="achievments">
+            <h2 class="text-capitalize">school achievments</h2>
+        </div>
+        <div class="bg-primary achievment_head" data-toggle="collapse" data-target="#school_achievment1">
+            Future 50 schools shaping success<i class="fa fa-sort-desc"></i>
+        </div>
+        <div id="school_achievment1" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="http://nie-images.s3.amazonaws.com/gall_content/2017/11/2017_11$largeimg06_Nov_2017_175117177.jpg" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 achievment_text">
+                <h5 class="text-success text-capitalize">Future 50 schools shaping success
+                </h5>
+                <p>ITI Central School has etched a covetous place as one among the top 50 Schools in India, Shaping Success in the 2017 ranking conducted by the Future 50 - Fortune Magazine. Over 250 schools from 60+ cities all over the country participated in this ranking.</p>
+            </div>
+        </div>
+        <div class="bg-primary achievment_head" data-toggle="collapse" data-target="#school_achievment2">
+            Center of excellence for kids<i class="fa fa-sort-desc"></i>
+        </div>
+        <div id="school_achievment2" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="https://www.chennaipublicschool.com/thirumazhisai/images/Centre%20of%20Excellence3.jpg" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-capitalize">Center of excellence for kids
+                </h5>
+                <p>ATAL tinkering labs take ITI one step closer to the vision ‘Cultivate one Million children in India as Neoteric Innovators’.They are the pivots of innovation that foster imagination and creativity in young minds.</p>
+            </div>
+        </div>
+        <div class="bg-primary achievment_head" data-toggle="collapse" data-target="#school_achievment3">
+            Sports & games<i class="fa fa-sort-desc"></i>
+        </div>
+        <div id="school_achievment3" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="https://www.chennaipublicschool.com/thirumazhisai/images/sports.jpg" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-capitalize">Sports & games
+                </h5>
+                <p>Students are segregated into four houses namely Alphard House, Canopus House, Diadem House and Plasma House. Intra-mural games and sports are conducted to promote healthy competitions among the four houses where the adrenaline is gushed up as they take part in all events energetically.</p>
+            </div>
+        </div>
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="whats_new">
+            <h2 class="text-capitalize">What's new</h2>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 whats_new_li">
+                <h4>Smart classroom</h4>
+                <img src="https://www.chennaipublicschool.com/thirumazhisai/images/home_page_image3.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                    ITI Central School was one of the first schools in India to have smart boards in all the classrooms and also a 5.1 theatre system in all classrooms.
+                </p>
+            </li>
+            <li class="list-group-item list-group-item-warning col-lg-12 col-md-12 col-sm-12 col-xs-12 whats_new_li">
+                <h4>Education through online</h4>
+                <img src="https://www.littlemagictree.com/wp-content/uploads/2020/10/Layer-91.png" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                    One of the major parts of learning is the experience gained by spending time with peers going through the same courses. Many people like discussing and learning through group studies.This lack of human Interaction is very prominent in these classes.
+                </p>
+            </li>
+        </ul>
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="alumni">
+            <h2 class="text-capitalize">Our Alumni</h2>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 alumni" data-toggle="modal" data-target="#alumni_1">
+            <img src="https://chennaipublicschool.com/alumni/upload/20170927103120_Sree%20Theja.png" class="img-responsive img-circle">
+            <hr>
+            <p class="text-primary">Sree Theja</p>
+        </div>
+        <div class="modal fade" id="alumni_1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Sree Theja</h4>
+                    </div>
+                    <br>
+                    <div class="modal-body">
+                        <img src="https://chennaipublicschool.com/alumni/upload/20170927103120_Sree%20Theja.png" class="img-circle img_modal">
+                        <br>
+                        <p class="p_modal">Tech Analyst-Morgan Stanly Batch-2012-13<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 alumni" data-toggle="modal" data-target="#alumni_2">
+            <img src="https://chennaipublicschool.com/alumni/upload/1507898006.png" class="img-responsive img-circle">
+            <hr>
+            <p class="text-primary">Ronak Pradeep</p>
+        </div>
+        <div class="modal fade" id="alumni_2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Ronak Pradeep</h4>
+                    </div>
+                    <br>
+                    <div class="modal-body">
+                        <img src="https://chennaipublicschool.com/alumni/upload/1507898006.png" class="img-circle img_modal">
+                        <br>
+                        <p class="p_modal">Analyst-RBC Batch:2014-15<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 alumni" data-toggle="modal" data-target="#alumni_3">
+            <img src="https://chennaipublicschool.com/alumni/upload/1507717290.png" class="img-responsive img-circle">
+            <hr>
+            <p class="text-primary">Raj Mahesh</p>
+        </div>
+        <div class="modal fade" id="alumni_3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Raj Mahesh</h4>
+                    </div>
+                    <br>
+                    <div class="modal-body">
+                        <img src="https://chennaipublicschool.com/alumni/upload/1507717290.png" class="img-circle img_modal">
+                        <br>
+                        <p class="p_modal">Indian Institute of Science, Bengaluru Batch:2015-16<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 alumni" data-toggle="modal" data-target="#alumni_4">
+            <img src="https://chennaipublicschool.com/alumni/upload/1507717549.png" class="img-responsive img-circle">
+            <hr>
+            <p class="text-primary">Shri Hari</p>
+        </div>
+        <div class="modal fade" id="alumni_4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Shri Hari</h4>
+                    </div>
+                    <br>
+                    <div class="modal-body">
+                        <img src="https://chennaipublicschool.com/alumni/upload/1507717549.png" class="img-circle img_modal">
+                        <br>
+                        <p class="p_modal">Indian Institute of Science, Bengaluru Batch:2016-17<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="ContactUs">
+            <h2 class="text-capitalize text-left">Contact Us</h2>
+        </div>
+        <div id="map" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15549.731632282832!2d77.6848164!3d13.0080812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d06c6f1661f931!2sITI%20Central%20School!5e0!3m2!1sen!2sin!4v1629245481397!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="Details">
+            <h3>Principal name: </h3>
+            <h4>M Lakshmi Rao</h4>
+            <div class="contact_1">
+                <a href="iticbse_bgp@itiltd.co.in?Subject=Hi">
+                    <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;iticbse_bgp@itiltd.co.in</h5>
+                </a>
+                <a href="#">
+                    <h5><i class="fa fa-phone-square"></i>&nbsp;&nbsp;080-28503867 / 25662028</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
